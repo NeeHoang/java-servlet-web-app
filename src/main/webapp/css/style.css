@@ -1,0 +1,201 @@
+
+/* Global Styles */
+body {
+    border: 10px solid orange;  /* Border tổng màu cam */
+    padding: 10px;  /* Thêm khoảng đệm bên trong để không bị sát biên */
+    box-sizing: border-box;  /* Đảm bảo chiều rộng và chiều cao bao gồm cả border */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info, .top-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.top-nav ul li {
+    margin: 0 10px;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.top-nav ul li a:hover {
+    color: blue; /* Đổi màu chữ thành xanh dương khi hover */
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    margin: 10px 0;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #555;
+    color: white;
+    border: none;
+}
+
+/* Banner Section */
+.banner {
+    background: url(../images/nen.png) center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner p {
+    margin: 10px 0 20px;
+
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Categories Section */
+#collections {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#collections h2 {
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category-item h3 {
+    margin-top: 10px;
+}
+
+/* Product Sections */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item p {
+    margin: 10px;
+}
+
+/* Sale Section */
+.original-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.full-width-border {
+    width: 100vw; /* 100% of the viewport width */
+    border-top: 3px solid orange; /* Add a top border */
+    border-bottom: 3px solid orange; /* Add a bottom border */
+    text-align: center; /* Center the text */
+    margin-bottom: 50px;
+    background-color: #90EE90;
+
+
+}
+
+
+
+/*<div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>/*
+
+
